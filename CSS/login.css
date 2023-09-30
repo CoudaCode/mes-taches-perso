@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root {
+  --primary-color: #d2691e;
+  --secondary-color: #6583e5;
+  --dark-color: #555;
+  --light-color: #ebf5fc;
+  --light-color-2: #868686;
+  --light-color-3: #bdcada;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #618334;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.form {
+  position: relative;
+  margin: 0 auto;
+  top: 20px;
+  width: 350px;
+  padding: 40px 40px 60px;
+  border-radius: 10px;
+  background-color: var(--light-color);
+  text-align: center;
+  box-shadow: 2px 2px 15px rgba(255, 255, 255, 0.8),
+    5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form h2 {
+  font-weight: 500;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: var(--primary-color);
+}
+
+.form .input {
+  margin-top: 40px;
+  text-align: left;
+}
+
+.form .input .inputBox {
+  margin-top: 20px;
+}
+
+.form .input .inputBox label {
+  display: block;
+  color: #868686;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+.form .input .inputBox input {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  color: var(--primary-color);
+  font-size: 14px;
+  border: none;
+  background-color: #ebf5fc;
+  outline: none;
+  padding: 5px 5px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--primary-color);
+}
+.form .input .inputBox button {
+  outline: none;
+  padding: 5px 5px;
+  font-size: 18px;
+  font-size: 14px;
+  border: none;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-bottom: none;
+  box-shadow: -2px -2px 6px rgba(255, 255, 255, 1),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+.form .input .inputBox a {
+  color: var(--primary-color);
+  font-size: 14px;
+  text-decoration: none;
+}
+.form .input .inputBox button:active {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  color: #006c9c;
+  margin-top: 20px;
+  box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 1),
+    inset 2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form .input .inputBox input::placeholder {
+  color: var(--light-color-3);
+  font-size: 18px;
+}
+.forget {
+  margin-top: 30px;
+  color: var(--dark-color);
+}
+
+.forget a {
+  color: var(--primary-color);
+}
