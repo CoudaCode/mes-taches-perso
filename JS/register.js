@@ -28,5 +28,5 @@ button.addEventListener("click", (e) => {
   var json = JSON.stringify(userList);
 
   localStorage.setItem("userList", json);
-  window.location.href = "http://127.0.0.1:5500/HTML/login.html";
+  window.location.href = "https://coudacode.github.io/mes-taches-perso/HTML/login.html";
 });
