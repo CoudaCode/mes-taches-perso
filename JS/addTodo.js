@@ -33,7 +33,7 @@ let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
   
   var json = JSON.stringify(todoList);
   localStorage.setItem("todoList", json);
-  
+  console.log(todoList)
   const newRow = document.createElement("tr");
   newRow.innerHTML = `
     <td>${todoList.tache.title}</td>
