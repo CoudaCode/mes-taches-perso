@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const listItem = document.createElement('li');
             listItem.innerHTML = `
                 ${taskText}
-                <button class="deleteTask">Delete</button>
+                <button class="deleteTask">Supprimer</button>
             `;
             taskList.appendChild(listItem);
             taskInput.value = '';
