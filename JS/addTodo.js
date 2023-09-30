@@ -40,6 +40,8 @@ let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
     <td>${todoList.tache.description}</td>
     <td>${todoList.tache.date}</td>
     <td>${todoList.tache.time}</td>
+    <td><button style="background-color:green; outline:none; border:none;">editer<button/></td>
+    <td><button style="background-color:red; outline:none; border:none;">supprimer<button/></td>
   `;
   todoList.appendChild(newRow);
 })
