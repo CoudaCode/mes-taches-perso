@@ -8,9 +8,9 @@
   </head>
   <body>
     <div class="container" id="todo-form">
-      <h1>Add TodoList</h1>
+      <h1>Ajouter Une Tâche</h1>
       <form class="content">
-        <label for="title">Title</label>
+        <label for="title">Titre</label>
         <input type="text" name="title" id="title" placeholder="Title" />
         <label for="description">Description</label>
         <input
@@ -21,10 +21,10 @@
         />
         <label for="date">Date</label>
         <input type="date" name="date" id="date" placeholder="Date" />
-        <label for="time">Time</label>
-        <input type="time" name="time" id="time" placeholder="Time" />
+        <label for="time">Temps</label>
+        <input type="time" name="time" id="time" placeholder="Temps" />
 
-        <input type="submit" id="button" value="Add TodoList" />
+        <input type="submit" id="button" value="Ajouter" />
       </form>
 
       
@@ -34,10 +34,12 @@
     <table>
       <thead>
         <tr>
-          <th>Title</th>
+          <th>Titre</th>
           <th>Description</th>
           <th>Date</th>
-          <th>Time</th>
+          <th>Temps</th>
+          <th>Editer</th>
+          <th>Supprimer</th>
         </tr>
       </thead>
       <tbody id="todo-list"></tbody>
