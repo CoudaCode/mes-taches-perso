@@ -36,13 +36,12 @@ let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
   
   const newRow = document.createElement("tr");
   newRow.innerHTML = `
-    <td>${data.tache.title}</td>
-    <td>${data.tache.description}</td>
-    <td>${data.tache.date}</td>
-    <td>${data.tache.time}</td>
+    <td>${todoList.tache.title}</td>
+    <td>${todoList.tache.description}</td>
+    <td>${todoList.tache.date}</td>
+    <td>${todoList.tache.time}</td>
   `;
   todoList.appendChild(newRow);
 })
-
 
 
