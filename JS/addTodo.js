@@ -1,4 +1,4 @@
-const title = document.querySelector('#title');
+/*const title = document.querySelector('#title');
 const description = document.querySelector('#description');
 const date = document.querySelector('#date');
 const time = document.querySelector('#time');
@@ -46,5 +46,31 @@ let todoList = JSON.parse(localStorage.getItem('todoList')) || [];
   `;
   todoList.appendChild(newRow);
 })
+*/
+
+document.addEventListener('DOMContentLoaded', function() {
+    const taskInput = document.getElementById('task');
+    const addTaskButton = document.getElementById('addTask');
+    const taskList = document.getElementById('taskList');
+
+    addTaskButton.addEventListener('click', function() {
+        const taskText = taskInput.value.trim();
+        if (taskText !== '') {
+            const listItem = document.createElement('li');
+            listItem.innerHTML = `
+                ${taskText}
+                <button class="deleteTask">Delete</button>
+            `;
+            taskList.appendChild(listItem);
+            taskInput.value = '';
+
+            const deleteButton = listItem.querySelector('.deleteTask');
+            deleteButton.addEventListener('click', function() {
+                taskList.removeChild(listItem);
+            });
+        }
+    });
+});
+
 
 
