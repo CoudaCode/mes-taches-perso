@@ -15,7 +15,7 @@ button.addEventListener("click", (e) => {
       result = user;
       console.log("result", result);
       
-      window.location.replace("https://coudacode.github.io/mes-taches-perso/HTML/login.html/HTML/addTodo.html");
+      window.location.replace("https://coudacode.github.io/mes-taches-perso/HTML/addTodo.html");
       sessionStorage.setItem("user", JSON.stringify(result));
     } else {
       alert("email ou mot de passe incorrect");
